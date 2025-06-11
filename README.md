@@ -1,13 +1,43 @@
-The goal of this project is to help you learn the notion of continuous integration and continuous deployment. You will write a simple GitHub Actions workflow to deploy a static website to GitHub Pages.
+# 🚀 GitHub Actions Deployment Workflow
 
-Requirements
-You are required to write a GitHub action that deploys any changes made to the index.html file to GitHub Pages. It should only deploy the file when the index.html file is changed.
+### Project: [github-actions-deployment-workflow](https://roadmap.sh/projects/github-actions-deployment-workflow)  
+### Author: [jiemCode](https://github.com/jiemcode)
 
-Here are the steps to get you started:
+---
 
-- Create a GitHub repository for the project called gh-deployment-workflow for example.
-- Repository should contain a simple index.html file saying “Hello, GitHub Actions!”
-- It should also have a README.md file explaining the project.
-- There should also be a `deploy.yml` file in the `.github/workflows` directory which contains the GitHub Actions workflow to deploy the website to GitHub Pages.
-- Every push to the main branch that changes the `index.html` file should trigger the workflow to run and deploy the website to GitHub Pages.
-- Website and any changes you make should be accessible at the GitHub pages URL for the repository e.g. https://<username>.github.io/gh-deployment-workflow/.
+## 📖 Description
+
+This project demonstrates the basic principles of **Continuous Integration (CI)** and **Continuous Deployment (CD)** using **GitHub Actions**.
+
+The goal is to deploy a simple static website to **GitHub Pages** every time the `index.html` file is modified and pushed to the `main` branch.
+
+---
+
+## 🌐 Live Site
+
+🔗 [https://jiemcode.github.io/gh-deployment-workflow/](https://jiemcode.github.io/gh-deployment-workflow/)
+
+---
+
+## 📁 Project Structure
+
+```plain
+.
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── index.html
+└── README.md
+```
+
+---
+
+## 🛠 Requirements
+
+- Create a GitHub repository named **`gh-deployment-workflow`**.
+- Add a simple `index.html` file (e.g. “Hello, GitHub Actions!”).
+- Create a GitHub Actions workflow file: `.github/workflows/deploy.yml`.
+- Workflow should:
+  - Trigger **only** when `index.html` is modified.
+  - Deploy the site to **GitHub Pages** automatically.
+- Ensure the site is live at: `https://<your-username>.github.io/gh-deployment-workflow/`
